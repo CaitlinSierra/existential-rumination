@@ -1,0 +1,1876 @@
+/*FORM VARIABLES*/
+/*RESPONSIVE VARIABLES*/
+/*MAIN CONTENT*/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(//fonts.googleapis.com/css?family=Cantarell);
+@import url(//fonts.googleapis.com/css?family=Lora);
+/*
+Author: mike@codeavengers.com
+*/
+/* line 9, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+html {
+  background-color: rgba(220, 220, 220, 0.5);
+  color: #5A3626;
+  padding-top: 18px;
+  height: 100%;
+}
+/* line 16, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+body {
+  font: normal 300 20px/30px 'Open Sans', sans-serif;
+  margin: 0 auto;
+  width: 330px;
+}
+/* line 22, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+.wiki-index {
+  height: 100%;
+}
+/* line 26, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+header,
+footer,
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+/* line 33, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+h1 {
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  color: #666;
+  font: normal 700 38px 'Lora', sans-serif;
+  letter-spacing: 0.7px;
+  margin: 0;
+  padding: 30px 0px;
+  text-align: center;
+}
+/* line 46, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+h2,
+h3,
+h4 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #777;
+  font: normal 700 19px 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  clear: both;
+}
+/* line 57, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+strong {
+  color: #787878;
+  font-weight: 600;
+}
+/* line 62, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+a {
+  color: #0064ff;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* line 68, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+a:hover {
+  color: black;
+  font-weight: 500;
+}
+/*img + a:first-of-type,
+a + a {
+  text-transform: uppercase;
+}*/
+/* line 79, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+body > a {
+  text-transform: uppercase;
+}
+/*Check with Tristan what the iframe, button links were for*/
+/* line 84, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+footer a,
+iframe + a:last-of-type,
+button + a:last-of-type,
+a[href="/"]:nth-last-child(2),
+a[href="/"]:last-child {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 95, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+img {
+  opacity: 0.8;
+  padding: 30px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 103, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+body > img:first-of-type {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto 5px;
+  padding: 0 0 10px;
+  /*width: 40%;*/
+}
+/* line 111, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+iframe {
+  display: block;
+  margin: 50px auto;
+  width: 100%;
+}
+/* line 1, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+button {
+  background-color: whiteSmoke;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  color: #888;
+  cursor: pointer;
+  font-size: 20px;
+  height: 60px;
+  margin: 20px 0;
+  padding: 4px 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 99%;
+}
+/* line 16, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+button:last-of-type {
+  margin-bottom: 50px;
+}
+/* line 20, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+button:hover {
+  background-color: #66ccff;
+  border: 2px solid #66ccff;
+  color: white;
+}
+/* line 26, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+textarea {
+  background: whiteSmoke;
+  color: #888;
+  font: normal 300 20px 'Arial';
+  letter-spacing: 0.8px;
+  margin: 10px 0 40px 0;
+  padding: 10px 0 0 10px;
+  resize: vertical;
+  width: 96.6%;
+}
+/* line 37, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: whiteSmoke url("/css/images/down-arrow-black.png") right center no-repeat;
+  border: 1px solid #aaa;
+  clear: right;
+  color: #888;
+  display: block;
+  font-size: 20px;
+  height: 44px;
+  letter-spacing: 0.8px;
+  margin: 10px 0 80px 0;
+  overflow: hidden;
+  padding: 0 10px;
+  vertical-align: middle;
+  width: 99%;
+}
+/* line 56, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input {
+  background-color: whiteSmoke;
+  border: 1px solid #aaa;
+  clear: right;
+  color: #888;
+  display: block;
+  font-size: 20px;
+  height: 44px;
+  letter-spacing: 0.8px;
+  margin: 10px 0 40px 0;
+  overflow: hidden;
+  padding: 0 0 0 10px;
+  vertical-align: middle;
+  width: 96.6%;
+}
+/* line 72, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="radio"],
+input[type="checkbox"] {
+  float: left;
+  height: 22px;
+  margin: 5px 10px 0 0;
+  width: 22px;
+}
+/* line 80, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+option {
+  background-color: #5a5a5a;
+  font-size: 20px;
+  color: white;
+}
+/* line 86, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+label {
+  color: #888;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+/* line 94, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+label:hover {
+  color: #66ccff;
+}
+/* line 98, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+.subtitle {
+  border-bottom: 1px solid #888;
+  border-top: 1px solid #888;
+  font-size: 26px;
+  margin: 5px 0;
+  padding: 15px;
+  text-align: center;
+  text-shadow: none;
+}
+/* CSS FOR RANGE ELEMENT*/
+/* line 109, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"] {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline;
+  margin: 0 20px;
+  padding: 0;
+  -webkit-appearance: none;
+  width: 240px;
+}
+/* line 118, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]:focus {
+  outline: none;
+}
+/* line 121, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9.8px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ffffff;
+  border-radius: 0px;
+  border: 1px solid #aaa;
+}
+/* line 130, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #aaa;
+  height: 24px;
+  width: 16px;
+  border-radius: 1px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8.1px;
+}
+/* line 141, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+/* line 144, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 9.8px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ffffff;
+  border-radius: 0px;
+  border: 1px solid #aaa;
+}
+/* line 153, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #aaa;
+  height: 24px;
+  width: 16px;
+  border-radius: 1px;
+  background: #ffffff;
+  cursor: pointer;
+}
+/* line 162, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 9.8px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+/* line 170, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-ms-fill-lower {
+  background: #ffffff;
+  border: 1px solid #aaa;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+/* line 176, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-ms-fill-upper {
+  background: #ffffff;
+  border: 1px solid #aaa;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+/* line 182, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #aaa;
+  height: 24px;
+  width: 16px;
+  border-radius: 1px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 9.8px;
+}
+/* line 192, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+/* line 195, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-base.less */
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ffffff;
+}
+@media screen and (min-width: 700px) {
+  /* line 120, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+  body {
+    font-size: 24px;
+    line-height: 38px;
+    width: 600px;
+  }
+  /* line 126, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+  h1 {
+    font-size: 50px;
+    padding: 30px 0;
+  }
+  /* line 131, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+  h2,
+  h3 {
+    font-size: 26px;
+  }
+  /*footer a,
+  iframe + a:last-of-type,
+  button + a:last-of-type,
+  img ~ a:last-of-type {
+    padding-left: 135px;
+  }*/
+  /*body>img:first-of-type {
+    padding: 0 37% 10px;
+    min-width: 26%;
+  }*/
+  /* line 147, C:\Users\Public\workspace\CodeAvengers\war\less-modules\wiki-base.less */
+  iframe {
+    min-height: 400px;
+  }
+  /*@font-open-sans: 'Open Sans', sans-serif;/*/
+  /*Used with fontSpy*/
+  /*font sizes*/
+  /*--- colors ---*/
+  /*sizes*/
+  /* line 273, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .negative-text {
+    color: #f15a29;
+    font-weight: bold;
+  }
+  /* line 278, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .positive-text {
+    color: #2bb673;
+    font-weight: bold;
+  }
+  /* line 434, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .p {
+    font: 15px 'museo-sans-rounded', sans-serif;
+    font-weight: 300;
+    letter-spacing: .2px;
+    line-height: 1.3em;
+    margin: 3px 0;
+  }
+  /* line 450, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .removeBreaks br {
+    display: none;
+  }
+  /* line 459, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .link {
+    cursor: pointer;
+    display: block;
+    font: 15px 'museo-sans-rounded', sans-serif;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin: 10px 0 0;
+    opacity: .8;
+    text-decoration: none;
+    text-transform: none;
+  }
+  /* line 470, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .link:hover {
+    opacity: 1;
+  }
+  /* line 508, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .verticalAlign {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
+  /* line 516, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .verticalAlignAbsolute {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    position: absolute;
+  }
+  /* line 521, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .verticalAlignAbsoluteReset {
+    position: relative;
+    top: none;
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+  }
+  /* line 529, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .verticalAlignFixed {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    position: fixed;
+  }
+  /* line 534, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .absoluteCenter {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+  }
+  /*
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+*/
+  /* line 604, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* line 613, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .box {
+    background-color: #fff;
+    box-shadow: 0 2px 0 0 #CCCFDB;
+    padding: 15px;
+  }
+  /*BOOTSTRAP*/
+  /* line 709, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  /* line 714, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .img-rounded {
+    border-radius: 6px;
+  }
+  /* line 717, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  /* line 730, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .img-circle {
+    border-radius: 50%;
+  }
+  /* line 734, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  /* line 744, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .sr-only-focusable:active,
+  .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+  /* line 863, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .container {
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 866, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 873, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .section {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 878, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-1,
+  .col-sm-1,
+  .col-md-1,
+  .col-lg-1,
+  .col-xs-2,
+  .col-sm-2,
+  .col-md-2,
+  .col-lg-2,
+  .col-xs-3,
+  .col-sm-3,
+  .col-md-3,
+  .col-lg-3,
+  .col-xs-4,
+  .col-sm-4,
+  .col-md-4,
+  .col-lg-4,
+  .col-xs-5,
+  .col-sm-5,
+  .col-md-5,
+  .col-lg-5,
+  .col-xs-6,
+  .col-sm-6,
+  .col-md-6,
+  .col-lg-6,
+  .col-xs-7,
+  .col-sm-7,
+  .col-md-7,
+  .col-lg-7,
+  .col-xs-8,
+  .col-sm-8,
+  .col-md-8,
+  .col-lg-8,
+  .col-xs-9,
+  .col-sm-9,
+  .col-md-9,
+  .col-lg-9,
+  .col-xs-10,
+  .col-sm-10,
+  .col-md-10,
+  .col-lg-10,
+  .col-xs-11,
+  .col-sm-11,
+  .col-md-11,
+  .col-lg-11,
+  .col-xs-12,
+  .col-sm-12,
+  .col-md-12,
+  .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 884, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12 {
+    float: left;
+  }
+  /* line 887, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-12 {
+    width: 100%;
+  }
+  /* line 890, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-11 {
+    width: 91.66666667%;
+  }
+  /* line 893, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  /* line 896, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-9 {
+    width: 75%;
+  }
+  /* line 899, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-8 {
+    width: 66.66666667%;
+  }
+  /* line 902, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
+  /* line 905, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-6 {
+    width: 50%;
+  }
+  /* line 908, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-5 {
+    width: 41.66666667%;
+  }
+  /* line 911, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  /* line 914, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-3 {
+    width: 25%;
+  }
+  /* line 917, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-2 {
+    width: 16.66666667%;
+  }
+  /* line 920, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-1 {
+    width: 8.33333333%;
+  }
+  /* line 923, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-12 {
+    right: 100%;
+  }
+  /* line 926, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-11 {
+    right: 91.66666667%;
+  }
+  /* line 929, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-10 {
+    right: 83.33333333%;
+  }
+  /* line 932, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-9 {
+    right: 75%;
+  }
+  /* line 935, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-8 {
+    right: 66.66666667%;
+  }
+  /* line 938, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-7 {
+    right: 58.33333333%;
+  }
+  /* line 941, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-6 {
+    right: 50%;
+  }
+  /* line 944, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-5 {
+    right: 41.66666667%;
+  }
+  /* line 947, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-4 {
+    right: 33.33333333%;
+  }
+  /* line 950, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-3 {
+    right: 25%;
+  }
+  /* line 953, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-2 {
+    right: 16.66666667%;
+  }
+  /* line 956, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-1 {
+    right: 8.33333333%;
+  }
+  /* line 959, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-pull-0 {
+    right: auto;
+  }
+  /* line 962, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-12 {
+    left: 100%;
+  }
+  /* line 965, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-11 {
+    left: 91.66666667%;
+  }
+  /* line 968, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-10 {
+    left: 83.33333333%;
+  }
+  /* line 971, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-9 {
+    left: 75%;
+  }
+  /* line 974, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-8 {
+    left: 66.66666667%;
+  }
+  /* line 977, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-7 {
+    left: 58.33333333%;
+  }
+  /* line 980, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-6 {
+    left: 50%;
+  }
+  /* line 983, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-5 {
+    left: 41.66666667%;
+  }
+  /* line 986, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-4 {
+    left: 33.33333333%;
+  }
+  /* line 989, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-3 {
+    left: 25%;
+  }
+  /* line 992, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-2 {
+    left: 16.66666667%;
+  }
+  /* line 995, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-1 {
+    left: 8.33333333%;
+  }
+  /* line 998, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-push-0 {
+    left: auto;
+  }
+  /* line 1001, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-12 {
+    margin-left: 100%;
+  }
+  /* line 1004, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  /* line 1007, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  /* line 1010, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 1013, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  /* line 1016, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  /* line 1019, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 1022, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  /* line 1025, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  /* line 1028, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 1031, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  /* line 1034, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  /* line 1037, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-xs-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 1514, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .clearfix:before,
+  .clearfix:after,
+  .container:before,
+  .container:after,
+  .container-fluid:before,
+  .container-fluid:after,
+  .section:before,
+  .section:after {
+    content: " ";
+    display: table;
+  }
+  /* line 1525, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .clearfix:after,
+  .container:after,
+  .container-fluid:after,
+  .section:after {
+    clear: both;
+  }
+  /* line 1531, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 1536, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .pull-right {
+    float: right !important;
+  }
+  /* line 1539, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .pull-left {
+    float: left !important;
+  }
+  /* line 1542, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .hide {
+    display: none !important;
+  }
+  /* line 1545, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .show {
+    display: block !important;
+  }
+  /* line 1548, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .invisible {
+    visibility: hidden;
+  }
+  /* line 1551, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  /* line 1558, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .hidden {
+    display: none !important;
+  }
+  /* line 1561, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .affix {
+    position: fixed;
+  }
+  @-ms-viewport {
+    width: device-width;
+  }
+  /* line 1567, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-xs,
+  .visible-sm,
+  .visible-md,
+  .visible-lg {
+    display: none !important;
+  }
+  /* line 1573, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-xs-block,
+  .visible-xs-inline,
+  .visible-xs-inline-block,
+  .visible-sm-block,
+  .visible-sm-inline,
+  .visible-sm-inline-block,
+  .visible-md-block,
+  .visible-md-inline,
+  .visible-md-inline-block,
+  .visible-lg-block,
+  .visible-lg-inline,
+  .visible-lg-inline-block {
+    display: none !important;
+  }
+  /* line 1727, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print {
+    display: none !important;
+  }
+  /* line 1745, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print-block {
+    display: none !important;
+  }
+  /* line 1753, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print-inline {
+    display: none !important;
+  }
+  /* line 1761, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print-inline-block {
+    display: none !important;
+  }
+  /* line 3, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  button {
+    font-size: 26px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
+  /* line 9, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  select {
+    margin: 30px 0 90px 0;
+  }
+  /* line 13, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  input[type="radio"],
+  input[type="checkbox"] {
+    height: 30px;
+    margin: 5px 30px 0 0;
+    width: 30px;
+  }
+  /* line 20, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  input[type="range"] {
+    width: 495px;
+  }
+  /* line 24, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  textarea,
+  input,
+  select {
+    font-size: 26px;
+    height: 48px;
+  }
+  /* THIS IS FOR TIC TAC TOE BUTTON */
+  /* line 32, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  button[id="button1"],
+  button[id="button2"],
+  button[id="button3"],
+  button[id="button4"],
+  button[id="button5"],
+  button[id="button6"],
+  button[id="button7"],
+  button[id="button8"],
+  button[id="button9"] {
+    font-size: 130px;
+    height: 190px;
+    margin: 5px 2px;
+    width: 190px;
+  }
+  /* THIS IS FOR TIC TAC TOE BUTTON */
+  /* line 48, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  #playButton {
+    font-size: 26px;
+    height: 70px;
+    width: 595px;
+  }
+  /* THIS IS FOR TIC TAC TOE SELECT */
+  /* line 55, C:\Users\Public\workspace\CodeAvengers\war\less-modules\form-responsive-700.less */
+  #selectTurn {
+    width: 595px;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) {
+  /* line 453, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .removeBreaks br {
+    display: inline;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) {
+  /* line 617, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .box {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 768px) {
+  /* line 761, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .container {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) {
+  /* line 764, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .container {
+    width: 970px;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px) {
+  /* line 767, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 768px) {
+  /* line 1041, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left;
+  }
+  /* line 1044, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-12 {
+    width: 100%;
+  }
+  /* line 1047, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  /* line 1050, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  /* line 1053, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-9 {
+    width: 75%;
+  }
+  /* line 1056, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  /* line 1059, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  /* line 1062, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-6 {
+    width: 50%;
+  }
+  /* line 1065, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  /* line 1068, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  /* line 1071, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-3 {
+    width: 25%;
+  }
+  /* line 1074, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  /* line 1077, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  /* line 1080, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  /* line 1083, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  /* line 1086, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  /* line 1089, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  /* line 1092, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  /* line 1095, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  /* line 1098, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  /* line 1101, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  /* line 1104, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  /* line 1107, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  /* line 1110, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  /* line 1113, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  /* line 1116, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  /* line 1119, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  /* line 1122, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  /* line 1125, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  /* line 1128, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  /* line 1131, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  /* line 1134, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  /* line 1137, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  /* line 1140, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  /* line 1143, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  /* line 1146, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  /* line 1149, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  /* line 1152, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  /* line 1155, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-push-0 {
+    left: auto;
+  }
+  /* line 1158, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  /* line 1161, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  /* line 1164, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  /* line 1167, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 1170, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  /* line 1173, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  /* line 1176, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 1179, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  /* line 1182, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  /* line 1185, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 1188, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  /* line 1191, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  /* line 1194, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) {
+  /* line 1199, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
+  /* line 1202, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-12 {
+    width: 100%;
+  }
+  /* line 1205, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  /* line 1208, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  /* line 1211, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-9 {
+    width: 75%;
+  }
+  /* line 1214, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  /* line 1217, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  /* line 1220, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-6 {
+    width: 50%;
+  }
+  /* line 1223, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  /* line 1226, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  /* line 1229, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-3 {
+    width: 25%;
+  }
+  /* line 1232, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  /* line 1235, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  /* line 1238, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  /* line 1241, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  /* line 1244, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  /* line 1247, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  /* line 1250, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  /* line 1253, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  /* line 1256, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  /* line 1259, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  /* line 1262, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  /* line 1265, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  /* line 1268, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  /* line 1271, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  /* line 1274, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-pull-0 {
+    right: auto;
+  }
+  /* line 1277, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-12 {
+    left: 100%;
+  }
+  /* line 1280, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  /* line 1283, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  /* line 1286, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-9 {
+    left: 75%;
+  }
+  /* line 1289, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  /* line 1292, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  /* line 1295, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-6 {
+    left: 50%;
+  }
+  /* line 1298, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  /* line 1301, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  /* line 1304, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-3 {
+    left: 25%;
+  }
+  /* line 1307, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  /* line 1310, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  /* line 1313, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-push-0 {
+    left: auto;
+  }
+  /* line 1316, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  /* line 1319, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  /* line 1322, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  /* line 1325, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 1328, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  /* line 1331, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  /* line 1334, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 1337, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  /* line 1340, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  /* line 1343, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 1346, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  /* line 1349, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  /* line 1352, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px) {
+  /* line 1357, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+  }
+  /* line 1360, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-12 {
+    width: 100%;
+  }
+  /* line 1363, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  /* line 1366, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  /* line 1369, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-9 {
+    width: 75%;
+  }
+  /* line 1372, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  /* line 1375, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  /* line 1378, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-6 {
+    width: 50%;
+  }
+  /* line 1381, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  /* line 1384, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  /* line 1387, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-3 {
+    width: 25%;
+  }
+  /* line 1390, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  /* line 1393, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  /* line 1396, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  /* line 1399, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  /* line 1402, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  /* line 1405, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  /* line 1408, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  /* line 1411, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  /* line 1414, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  /* line 1417, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  /* line 1420, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  /* line 1423, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  /* line 1426, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  /* line 1429, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  /* line 1432, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  /* line 1435, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  /* line 1438, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  /* line 1441, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  /* line 1444, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  /* line 1447, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  /* line 1450, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  /* line 1453, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  /* line 1456, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  /* line 1459, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  /* line 1462, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  /* line 1465, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  /* line 1468, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  /* line 1471, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-push-0 {
+    left: auto;
+  }
+  /* line 1474, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  /* line 1477, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  /* line 1480, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  /* line 1483, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 1486, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  /* line 1489, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  /* line 1492, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 1495, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  /* line 1498, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  /* line 1501, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 1504, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  /* line 1507, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  /* line 1510, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  /* line 1588, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-xs {
+    display: block !important;
+  }
+  /* line 1591, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  table.visible-xs {
+    display: table !important;
+  }
+  /* line 1594, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  /* line 1597, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  /* line 1603, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  /* line 1608, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  /* line 1613, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 768px) and (max-width: 991px) {
+  /* line 1618, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-sm {
+    display: block !important;
+  }
+  /* line 1621, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  table.visible-sm {
+    display: table !important;
+  }
+  /* line 1624, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  /* line 1627, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 768px) and (max-width: 991px) {
+  /* line 1633, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 768px) and (max-width: 991px) {
+  /* line 1638, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 768px) and (max-width: 991px) {
+  /* line 1643, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) and (max-width: 1199px) {
+  /* line 1648, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-md {
+    display: block !important;
+  }
+  /* line 1651, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  table.visible-md {
+    display: table !important;
+  }
+  /* line 1654, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  tr.visible-md {
+    display: table-row !important;
+  }
+  /* line 1657, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) and (max-width: 1199px) {
+  /* line 1663, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-md-block {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) and (max-width: 1199px) {
+  /* line 1668, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) and (max-width: 1199px) {
+  /* line 1673, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px) {
+  /* line 1678, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-lg {
+    display: block !important;
+  }
+  /* line 1681, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  table.visible-lg {
+    display: table !important;
+  }
+  /* line 1684, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  /* line 1687, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px) {
+  /* line 1693, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px) {
+  /* line 1698, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px) {
+  /* line 1703, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  /* line 1708, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 768px) and (max-width: 991px) {
+  /* line 1713, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 992px) and (max-width: 1199px) {
+  /* line 1718, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px) {
+  /* line 1723, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .hidden-lg {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 700px) and print {
+  /* line 1731, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print {
+    display: block !important;
+  }
+  /* line 1734, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  table.visible-print {
+    display: table !important;
+  }
+  /* line 1737, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  tr.visible-print {
+    display: table-row !important;
+  }
+  /* line 1740, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+@media screen and (min-width: 700px) and print {
+  /* line 1749, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print-block {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 700px) and print {
+  /* line 1757, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 700px) and print {
+  /* line 1765, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+@media screen and (min-width: 700px) and print {
+  /* line 1770, C:\Users\Public\workspace\CodeAvengers\war\less-modules\variables.less */
+  .hidden-print {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=wiki.css.map */
